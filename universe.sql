@@ -13,9 +13,9 @@ CREATE TABLE galaxy (
 
 INSERT INTO galaxy (name, galaxy_type, distance_from_earth, description, has_life) VALUES
 ('Milky Way', 'Spiral', 0, 'Our home galaxy', true),
-('Andromeda', 'Spiral', 2537000, 'Nearest spiral galaxy', false),
-('Triangulum', 'Spiral', 3000000, 'Third-largest in Local Group', false),
-('Whirlpool', 'Spiral', 23000000, 'Also called M51', false),
+('Andromeda', 'Spiral', 2537000, 'Nearest galaxy', false),
+('Triangulum', 'Spiral', 3000000, 'Third largest galaxy in Local Group', false),
+('Whirlpool', 'Spiral', 23000000, 'Well-defined Spiral Galaxy', false),
 ('Sombrero', 'Elliptical', 29000000, 'Bright galaxy with a dust lane', false),
 ('Pinwheel', 'Spiral', 21000000, 'Face-on spiral galaxy', false);
 
@@ -57,7 +57,7 @@ INSERT INTO planet (name, star_id, age_in_millions_of_years, is_spherical, plane
 ('Kepler-22b', 2, 6000, true, 'Exoplanet'),
 ('Proxima b', 6, 4500, true, 'Exoplanet'),
 ('Alpha Centauri Bb', 3, 5000, true, 'Exoplanet'),
-('TRAPPIST-1e', 4, 7000, true, 'Exoplanet');
+('Trappist-1e', 4, 7000, true, 'Exoplanet');
 
 CREATE TABLE moon (
   moon_id SERIAL PRIMARY KEY,
@@ -73,7 +73,7 @@ INSERT INTO moon (name, planet_id, diameter_km, has_life, description) VALUES
 ('Phobos', 4, 22, false, 'Mars inner moon'),
 ('Deimos', 4, 12, false, 'Mars outer moon'),
 ('Ganymede', 5, 5268, false, 'Largest moon in the solar system'),
-('Europa', 5, 3122, false, 'Icy moon of Jupiter'),
+('Europa', 5, 3122, false, 'One of the brightest moon in the Solar System'),
 ('Io', 5, 3643, false, 'Volcanically active moon of Jupiter'),
 ('Callisto', 5, 4820, false, 'Heavily cratered moon of Jupiter'),
 ('Titan', 6, 5150, false, 'Saturn’s largest moon'),
@@ -81,14 +81,14 @@ INSERT INTO moon (name, planet_id, diameter_km, has_life, description) VALUES
 ('Mimas', 6, 396, false, 'Small moon of Saturn'),
 ('Rhea', 6, 1528, false, 'Moon of Saturn'),
 ('Iapetus', 6, 1469, false, 'Saturn’s two-tone moon'),
-('Titania', 7, 1577, false, 'Moon of Uranus'),
-('Oberon', 7, 1523, false, 'Moon of Uranus'),
-('Umbriel', 7, 1169, false, 'Moon of Uranus'),
-('Ariel', 7, 1158, false, 'Moon of Uranus'),
-('Miranda', 7, 471, false, 'Moon of Uranus'),
-('Triton', 8, 2707, false, 'Moon of Neptune'),
-('Charon', 11, 1212, false, 'Pluto’s moon'),
-('Dysnomia', 12, 163, false, 'Moon of Eris');
+('Titania', 7, 1577, false, 'Largest Moon of Uranus'),
+('Oberon', 7, 1523, false, 'Second Largest Moon of Uranus'),
+('Umbriel', 7, 1169, false, 'Third Largest Moon of Uranus'),
+('Ariel', 7, 1158, false, 'Best Moon Candidate For Future Exploration'),
+('Miranda', 7, 471, false, 'The Most Geologigal Diverse Moon of Uranus'),
+('Triton', 8, 2707, false, 'Best Moon Candidate For Potential Habitability'),
+('Charon', 11, 1212, false, 'Has a Unique Binary System'),
+('Dysnomia', 12, 163, false, 'Only Known Moon of Eris');
 
 CREATE TABLE asteroid (
   asteroid_id SERIAL PRIMARY KEY,
